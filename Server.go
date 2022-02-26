@@ -14,7 +14,7 @@ import (
 )
 
 func landingpage(rw http.ResponseWriter, req *http.Request) {
-	msg := "go to this link(http://localhost:8081/GenerateBarcodes) to generate barcode" + "\r\n"
+	msg := "go to this link(http://localhost:8081/GenerateBarcodes) to generate barcode " + "\r\n"
 	msg += "go to this link(http://localhost:8081/SearchBarcode?barcode=some_value) to search barcode" + "\r\n"
 	fmt.Fprint(rw, msg)
 }
